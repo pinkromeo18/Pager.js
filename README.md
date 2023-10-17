@@ -1,6 +1,6 @@
 # Pager.js
 Pager.js Pager.css
-sample https://codepen.io/pinkromeo/pen/RwEzKVp?editors=1010
+### demo >> https://codepen.io/pinkromeo/pen/yLGdVOX?editors=0010
 ```
 https://pinkromeo18.github.io/Pager.js/
 ```
