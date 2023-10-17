@@ -9,6 +9,7 @@ https://pinkromeo18.github.io/Pager.js/
 @import url(https://pinkromeo18.github.io/Pager.js/Pager.css);
 ```
 ```js
+//@import url(https://pinkromeo18.github.io/Pager.js/Pager.css);
 import {Pager} from "https://pinkromeo18.github.io/Pager.js/Pager.js"
 ```
 ```js
