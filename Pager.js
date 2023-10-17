@@ -1,4 +1,4 @@
-/*v1.0 need Pager.css*/
+/*v1.1 need Pager.css*/
 /*
 //@import url(https://pinkromeo18.github.io/Pager.js/Pager.css);
 import {Pager} from "https://pinkromeo18.github.io/Pager.js/Pager.js"
@@ -21,17 +21,20 @@ console.log(pager)
 export function Pager(id){
   const topclass="pages",pageclass="page"
   var o={}
+  o.count = 1;
   o.dom=document.getElementById(id)||document.body
   o.dom.classList.add(topclass)
   //
   o.add=(obj)=>{
     var el = Object.assign(document.createElement('div'),obj)    
     el.classList.add(pageclass)
+    el.classList.add(`${pageclass}-${o.count}`)
     o.dom.appendChild(el)
+    o.count++;
     return o
   }
   o.page=(num)=>{
-    var el= o.dom.querySelector(`.${pageclass}:nth-child(${num})`)
+    var el= o.dom.querySelector(`.${pageclass}-${num}`)
     return el
   }
   o.q=(query)=>o.dom.querySelector(query)
