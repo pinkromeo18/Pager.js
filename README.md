@@ -1,9 +1,6 @@
 # Pager.js
 Pager.js Pager.css
-sample
-```
-https://codepen.io/pinkromeo/pen/yLGdVOX?editors=0010
-```
+sample https://codepen.io/pinkromeo/pen/RwEzKVp?editors=1010
 ```
 https://pinkromeo18.github.io/Pager.js/
 ```
@@ -15,20 +12,19 @@ https://pinkromeo18.github.io/Pager.js/
 import {Pager} from "https://pinkromeo18.github.io/Pager.js/Pager.js"
 ```
 ```js
-//usage
-import {Pager} from "https://pinkromeo18.github.io/Pager.js/Pager.js"
-
-var pager=Pager();
+/*pager sample*/
+var pager=Pager("app")
 pager.add({
-  html:"<p></p><p>xxx</p>",
-  css:`background-image: url(https://mae.chab.in/wp-content/uploads/2015/09/QsjPn.jpg);`
+  id:"yyy",
+  innerHTML:"xxxya",
+  style:"background:#234; color:ghostwhite;"
 }).add({
-  html:"<input type='text'></input><button>呼び出し</button>",
-  css:"background-color: #ccc;"
-}).add({
-  html:"３番",
-  css:"background-color: #333;"
-});
-var page2=pager.page(2);
+  id:"zzz",
+  innerHTML:"xxxya",
+  style:"background:orange; color:black;"
+})
+pager.page(2).textContent="this is page 2"
+pager.q("#yyy").textContent="id #yyy"
+console.log(pager)
 
 ```
